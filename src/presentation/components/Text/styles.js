@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {primary} from 'colors';
+import {primary, secondary, accented} from 'colors';
 
 export default StyleSheet.create({
   basic: {
@@ -12,6 +12,12 @@ export default StyleSheet.create({
   },
   centered: {
     textAlign: 'center',
+  },
+  secondary: {
+    color: secondary,
+  },
+  highlighted: {
+    color: accented,
   },
   h1: {
     fontSize: 40,

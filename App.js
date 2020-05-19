@@ -6,14 +6,18 @@
  * @flow strict-local
  */
 
+import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {HomeScreen} from 'screens';
+import {AppRoutes} from 'enums';
+import {AppNavigator} from 'navigation';
+import {NavigationContainer} from '@react-navigation/native';
+
+console.disableYellowBox = true;
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <HomeScreen />
-    </SafeAreaProvider>
+    <NavigationContainer>
+      <AppNavigator initialRouteName={AppRoutes.HOME} />
+    </NavigationContainer>
   );
 }

@@ -9,6 +9,8 @@ export default ({style, ...props}) => (
       styles.basic,
       props.bold && styles.bold,
       props.centered && styles.centered,
+      props.secondary && styles.secondary,
+      props.highlighted && styles.highlighted,
       props.logo && styles.logo,
       props.h1 && styles.h1,
       props.h2 && styles.h2,
