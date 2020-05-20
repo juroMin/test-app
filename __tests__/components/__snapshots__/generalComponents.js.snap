@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f3f3f3",
+        "height": 2,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Header renders correctly 1`] = `
+Array [
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "marginVertical": 10,
+      }
+    }
+  >
+    <Image
+      resizeMode="contain"
+      style={
+        Object {
+          "height": 50,
+          "width": 150,
+        }
+      }
+    />
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#f3f3f3",
+          "height": 2,
+        },
+        undefined,
+      ]
+    }
+  />,
+]
+`;
+
+exports[`Overlay renders correctly 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Array [
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+      null,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Row renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`Safe Area Layout renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+      },
+      undefined,
+      Object {
+        "paddingBottom": undefined,
+        "paddingTop": undefined,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Text renders correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "black",
+        "fontSize": 14,
+        "textAlign": "justify",
+      },
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
