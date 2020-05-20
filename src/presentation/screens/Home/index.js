@@ -1,11 +1,20 @@
-import React from 'react';
-import {View, StatusBar, ScrollView} from 'react-native';
-import {SafeAreaLayout, Header, Text} from 'components';
-import {DetailsSection} from './components';
+import React, {useState, useEffect} from 'react';
+import {View, StatusBar, ScrollView, FlatList} from 'react-native';
+import {SafeAreaLayout, Header, Text, Overlay} from 'components';
+import {DetailsSection, NewsArticle} from './components';
 import * as Assets from 'assets';
+import {getBusinessNews} from 'api';
 import styles from './styles';
 
 const HomeScreen = () => {
+  const [newsList, setNewsLIst] = useState([]);
+
+  useEffect(() => {
+    getBusinessNews().then(({data}) => {
+      setNewsLIst(data.results);
+    });
+  }, []);
+
   return (
     <View style={styles.bode}>
       <StatusBar barStyle="dark-content" />
@@ -55,6 +64,18 @@ const HomeScreen = () => {
           />
           <View style={styles.footer} />
         </ScrollView>
+        <Overlay style={styles.newsFeedContainer}>
+          <View style={styles.newsFeed}>
+            <FlatList
+              horizontal
+              data={newsList}
+              showsHorizontalScrollIndicator={false}
+              scrollEventThrottle={20}
+              keyExtractor={(_, index) => index}
+              renderItem={({item}) => <NewsArticle item={item} />}
+            />
+          </View>
+        </Overlay>
       </SafeAreaLayout>
     </View>
   );

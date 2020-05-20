@@ -20,6 +20,7 @@ export default ({state, descriptors, navigation}) => {
             toValue: 1,
             duration: 300,
             easing: Easing.easeOutBack,
+            useNativeDriver: false,
           }).start();
         }
 
