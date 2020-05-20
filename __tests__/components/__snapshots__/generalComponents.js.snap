@@ -48,6 +48,25 @@ Array [
 ]
 `;
 
+exports[`Overlay renders correctly 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Array [
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+      null,
+      undefined,
+    ]
+  }
+/>
+`;
+
 exports[`Row renders correctly 1`] = `
 <View
   style={

@@ -11,7 +11,7 @@ export default StyleSheet.create({
     paddingBottom: 10,
   },
   footer: {
-    marginBottom: 240,
+    marginBottom: 260,
   },
   newsFeedContainer: {
     justifyContent: 'flex-end',
