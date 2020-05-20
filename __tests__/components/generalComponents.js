@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {Divider, Header, Text, Row, SafeAreaLayout} from 'components';
+import {Divider, Header, Text, Row, SafeAreaLayout, Overlay} from 'components';
 
 test('Divider renders correctly', () => {
   const tree = renderer.create(<Divider />).toJSON();
@@ -24,5 +24,10 @@ test('Row renders correctly', () => {
 
 test('Safe Area Layout renders correctly', () => {
   const tree = renderer.create(<SafeAreaLayout />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('Overlay renders correctly', () => {
+  const tree = renderer.create(<Overlay />).toJSON();
   expect(tree).toMatchSnapshot();
 });
